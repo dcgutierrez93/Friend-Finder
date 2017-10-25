@@ -1,16 +1,15 @@
 // ==================================
 // Dependencies
 // ==================================
-const express    = require('express');
-const bodyParser = require('body-parser');
-const path       = require('path');
+var express    = require('express');
+var bodyParser = require('body-parser');
 
 // ==================================
 // Express Configuration
 // ==================================
-const app = express;
+var app = express();
 
-const PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080;
 
 // bodyParser
 app.use(bodyParser.json());
